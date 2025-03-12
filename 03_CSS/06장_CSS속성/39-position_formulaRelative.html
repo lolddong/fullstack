@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>position_absoluteLeftTop</title>
+    <title>CSS3 Position Property</title>
     <style>
+      body > div {
+        width: 400px;
+        height: 100px;
+        border: 3px solid black;
+        position: relative;
+      }
       .box {
         width: 100px;
         height: 100px;
@@ -12,26 +18,31 @@
       }
       .box:nth-of-type(1) {
         background-color: red;
-        left: 0;
-        top: 0;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
       }
       .box:nth-of-type(2) {
         background-color: green;
         left: 50px;
         top: 50px;
+        z-index: 10;
       }
       .box:nth-of-type(3) {
         background-color: blue;
-        left: 100px;
-        top: 100px;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
       }
     </style>
   </head>
   <body>
-    <body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-    </body>
+    </div>
+    <h1>Lorem ipsum dolor sit amet</h1>
   </body>
 </html>
