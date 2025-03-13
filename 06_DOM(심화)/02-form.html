@@ -7,19 +7,48 @@
     <script>
       // 이벤트 연결
       window.onload = function () {
-        let button = document.getElementById('btn');
-        button.addEventListener('click', function () {
+        let submit_btn = document.getElementById('submit_btn');
+        let selectAll_btn = document.getElementById('selectAll_btn');
+        let cancelAll_btn = document.getElementById('cancelAll_btn');
+
+        // 전송 버튼 클릭 시: 콘솔에 음식들 출력
+        submit_btn.addEventListener('click', function () {
           // 체크박스 요소 갖고오기
           let checkboxes = document.querySelectorAll(
             'input[name="food"]:checked'
           );
+
+          // 미선택 시: 경고창 출력
+          if (checkboxes.length == 0) {
+            alert('1개 이상 선택해주세요.');
+          }
+
+          // 선택 시: 콘솔에 음식들 출력
           let selected_foods = [];
-          // 선택된 체크박스들 배열에 저장
           checkboxes.forEach(function (checkbox) {
             selected_foods.push(checkbox.value);
           });
-          // 콘솔에 출력
           console.log(selected_foods);
+        });
+
+        // 전체 선택 버튼 클릭 시: 전체 체크박스 선택
+        checkAll_btn.addEventListener('click', function () {
+          // 체크박스 요소 갖고오기
+          let checkboxes = document.querySelectorAll('input[name="food"]');
+          // 속성 checked로 변경
+          checkboxes.forEach(function (checkbox) {
+            checkbox.checked = true;
+          });
+        });
+
+        // 전체 해제 버튼 클릭 시: 전체 체크박스 해제
+        uncheckAll_btn.addEventListener('click', function () {
+          // 체크박스 요소 갖고오기
+          let checkboxes = document.querySelectorAll('input[name="food"]');
+          // 속성 unchecked로 변경
+          checkboxes.forEach(function (checkbox) {
+            checkbox.checked = false;
+          });
         });
       };
     </script>
@@ -33,7 +62,9 @@
         <label
           ><input type="checkbox" name="food" value="불고기" /> 불고기</label
         >
-        <input id="btn" type="button" value="전송" />
+        <input id="submit_btn" type="button" value="전송" />
+        <input id="checkAll_btn" type="button" value="전체 선택" />
+        <input id="uncheckAll_btn" type="button" value="전체 해제" />
       </div>
     </form>
   </body>
