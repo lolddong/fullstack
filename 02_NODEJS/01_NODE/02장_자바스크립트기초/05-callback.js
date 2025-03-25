@@ -3,26 +3,26 @@ const order = (coffee, callback) => {
   console.log(`${coffee} 주문 접수`);
   setTimeout(() => {
     callback(coffee);
-  }, 3000);
+  }, 3000); // 3000 ms =  3 sec
 };
 
 const display = (result) => {
   console.log(`${result} 완료!`);
 };
 
-order('아메리카노', display);
+order("아메리카노", display);
 
 // 2: 익명 함수 사용 (단어 출력 프로그램)
 function displayLetter() {
-  console.log('A');
+  console.log("A");
   setTimeout(() => {
-    console.log('B');
+    console.log("B");
     setTimeout(() => {
-      console.log('C');
+      console.log("C");
       setTimeout(() => {
-        console.log('D');
+        console.log("D");
         setTimeout(() => {
-          console.log('stop!');
+          console.log("stop!");
         }, 1000);
       }, 1000);
     }, 1000);

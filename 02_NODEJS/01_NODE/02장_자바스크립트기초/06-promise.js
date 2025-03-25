@@ -1,8 +1,8 @@
 // Promise 사용
-let likePizza = false;
+let likePizza = true;
 const pizza = new Promise((resolve, reject) => {
-  if (likePizza) resolve('피자를 주문합니다.');
-  else reject('피자를 주문하지 않습니다.');
+  if (likePizza) resolve("피자를 주문합니다.");
+  else reject("피자를 주문하지 않습니다.");
 });
 // console.log(pizza); // false일 경우 에러 발생 -> 예외 처리 필요
 
