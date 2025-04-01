@@ -93,14 +93,20 @@
         </li>
       </ul>
       <hr />
-      x : <input type="text" v-model.number="x" /> <br />
-      y : <input type="text" v-model.number="y" /> <br />
-      덧셈 결과: {{sum}}
+      이름:
+      <input
+        type="text"
+        v-model.trim="name"
+        placeholder="영문 두 글자 이상을 입력하세요."
+      /><br />
+      <ul>
+        <div v-show="isLoading">검색중</div>
+      </ul>
     </div>
     <script type="text/javascript" src="https://unpkg.com/vue"></script>
     <script type="text/javascript">
       var vm = Vue.createApp({
-        name: "App",
+        name: 'App',
         data() {
           // return { x: 0, y: 0, sum: 0 };
           return { x: 0, y: 0 };
@@ -126,7 +132,7 @@
             else return result;
           },
         },
-      }).mount("#app");
+      }).mount('#app');
     </script>
   </body>
 </html>
