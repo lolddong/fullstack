@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 처리</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>05 이벤트 처리</h1>
+      <h2>5.7 이벤트 수식어</h2>
+      <ul>
+        <li>
+          .prevent, .stop, .self 외에도 다양한 이벤트 수식어(Event Modifier)
+          존재
+        </li>
+      </ul>
+      <h3>1) once 수식어</h3>
+      <ul>
+        <li>한 번만 이벤트 발생시키고 이벤트 연결 해제</li>
+      </ul>
+      <hr
+        style="border: none; /* 기본 테두리 제거 */ border-top: 2px dotted #000"
+      />
+      <h3>(continued 1)</h3>
+      <h3>2) 키코드 관련 수식어</h3>
+      <ul>
+        <li>KeyCode 수식어는 키보드 관련 이벤트 처리 시 사용되는 수식어</li>
+        <li>
+          키보드의 키를 누를 때 고유의 키코드 (KeyCode) 값을 가질 때만 이벤트
+          발생시키는 방법 제공
+        </li>
+      </ul>
+      <hr />
+      이름:
+      <input
+        type="text"
+        v-model.trim="name"
+        @keyup="search"
+        placeholder="영문 두글자 이상을 입력하세요."
+      />
+      <br />
+      <ul>
+        <li v-for="c in contacts">{{c.name}} : {{c.tel}}</li>
+      </ul>
+      <div v-show="isLoading">검색중</div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios"></script>
+    <script type="text/javascript" src="https://unpkg.com/lodash"></script>
+    <script type="text/javascript">
+      const BASEURL = "https://contactsvc.bmaster.kro.kr";
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            name: "",
+            contacts: [],
+            isLoading: false,
+          };
+        },
+        methods: {
+          search(e) {
+            if (e.keyCode === 13) {
+              // 13은 엔터키
+              if (this.name.length >= 2) {
+                this.fetchContacts();
+              } else {
+                this.contacts = [];
+              }
+            }
+          },
+          fetchContacts() {
+            this.isLoading = true;
+            axios
+              .get(`${BASEURL}/contacts_long/search/${this.name}`)
+              .then((response) => {
+                this.isLoading = false;
+                this.contacts = response.data;
+              });
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 처리</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>05 이벤트 처리</h1>
+      <h2>5.3 이벤트 핸들러 메서드</h2>
+      <ul>
+        <li>
+          복잡한 기능은 메서드에 미리 작성해두고, v-on 디렉티브로 참조해서
+          이벤트 처리 수행
+        </li>
+        <hr
+          style="
+            border: none; /* 기본 테두리 제거 */
+            border-top: 2px dotted #000;
+          "
+        />
+        <h3>(continued 1)</h3>
+        <li>간단한 이벤트 처리 메서드는 인라인으로 템플릿에 작성 가능!</li>
+      </ul>
+
+      <hr />
+      <input type="text" id="a" :value="name" @input="changeName" />
+      <br />
+      입력하신 이름 : <span>{{name}}</span>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { name: "" };
+        },
+        methods: {
+          changeName(e) {
+            this.name = e.target.value;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
