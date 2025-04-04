@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boostrap.bundle.min.js"></script>
   </head>
-  <body>
+  <div>
     <h1>기본 요소</h1>
     <h2>1. 이미지</h2>
     <div style="text-align: center">
@@ -85,7 +85,7 @@
       <strong>Success!</strong> This alert box could indicate a successful or positive action.
     </div>
     <h2>5. Button</h2>
-    <h3>Basic Button</h3>
+    <h3>1) Basic Button</h3>
       <div name="btn-basic">
         <button type="button" class="btn">Basic</button>
         <button type="button" class="btn btn-primary">Primary</button>
@@ -98,7 +98,7 @@
         <button type="button" class="btn btn-light">Light</button>
         <button type="button" class="btn btn-link">Link</button>
       </div>
-    <h3>Outline Button</h3>
+    <h3>2) Button Outline</h3>
     <div name="btn-outline">
       <button type="button" class="btn btn-outline-primary">Primary</button>
       <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -109,12 +109,63 @@
       <button type="button" class="btn btn-outline-dark">Dark</button>
       <button type="button" class="btn btn-outline-light text-dark">Light</button>
     </div>
-    <h3>Button Size</h3>
+    <h3>3) Button Size</h3>
     <div name="btn-size">
       <button type="button" class="btn btn-primary btn-lg">Large</button>
       <button type="button" class="btn btn-primary">Default</button>
       <button type="button" class="btn btn-primary btn-sm">Small</button>
     </div>
+    <h3>4) Block-level Button</h3>
+    <div class="d-grid gap-3">
+      <button type="button" class="btn btn-primary btn-black">Full-width Button</button>
+      <button type="button" class="btn btn-primary btn-black">Full-width Button</button>
+      <button type="button" class="btn btn-primary btn-black">Full-width Button</button>
+    </div>
+    <h3>5) Active, Disabled</h3>
+      <button type="button" class="btn btn-primary active">Active Primary</button>
+      <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+      <a href="#" class="btn btn-secondary active">Active Link</a>
+      <a href="#" class="btn btn-secondary disabled">Disabled Link</a>
+    <h3>6) Spinner Button</h3>
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+      </button>
+      <button class="btn btn-success">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading...
+      </button>
+      <button class="btn btn-danger disabled" >
+        <span class="spinner-border spinner-border-md"></span>
+        로딩중...
+      </button>
+      <button class="btn btn-warning disabled">
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading...
+      </button>
+    <h3>7) Button Group</h3>
+      <div class="btn-group btn-group-vertical">
+        <button type="button" class="btn btn-danger">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-warning">Sony</button>
+      </div>
+    <h2>6. Badge</h2>
+      <span class="badge bg-primary">Primary</span>
+      <span class="badge bg-secondary">Secondary</span>
+      <span class="badge bg-success">Success</span>
+      <span class="badge bg-danger">Danger</span>
+      <span class="badge bg-warning">Warning</span>
+      <span class="badge bg-info">Info</span>
+      <span class="badge bg-light">Light</span>
+      <span class="badge  bg-dark">Dark</span>
+    <h2>7. Pill Badges</h2>
+      <span class="badge rounded-pill bg-primary">Primary</span>
+      <span class="badge rounded-pill bg-secondary">Secondary</span>
+      <span class="badge rounded-pill bg-success">Success</span>
+      <span class="badge rounded-pill bg-danger">Danger</span>
+      <span class="badge rounded-pill bg-warning">Warning</span>
+      <span class="badge rounded-pill bg-info">Info</span>
+      <span class="badge rounded-pill bg-light">Light</span>
+      <span class="badge rounded-pill bg-dark">Dark</span>
     <style>
       body {
         margin: 50px
