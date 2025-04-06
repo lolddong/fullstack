@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+    <style>
+      .test {
+        background-color: yellow;
+        border: 4px double grey;
+      }
+      .over {
+        background-color: aqua;
+        width: 300px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>6.1 HTML 스타일 적용</h1>
+    <ul>
+      <li>
+        HTML 요소의 스타일 특성은 모두 문자열, 케밥 표기법(kebab casing) 사용,
+        대소문자 구별하지 않음
+      </li>
+      <li>
+        스타일 적용 우선순위:
+        <ul>
+          <li>
+            요소의 기본 스타일 > .test 스타일 > .over 스타일 > 인라인 스타일
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="test over" style="background: orange"></div>
+  </body>
+</html>
