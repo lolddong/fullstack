@@ -24,7 +24,7 @@
       <h1 class="mt-5"><i class="fa-regular fa-pen-to-square"></i>새 글쓰기</h1>
       <form>
         <div class="mb-3 mt-3">
-          <label for="title">제목</label>
+          <label for="title" class="mb-2">제목</label>
           <input
             type="text"
             class="form-control"
@@ -34,7 +34,7 @@
           />
         </div>
         <div class="mb-3 mt-3">
-          <label for="author">작성자</label>
+          <label for="author" class="mb-2">작성자</label>
           <input
             type="text"
             class="form-control"
@@ -44,18 +44,25 @@
           />
         </div>
         <div class="mb-3 mt-3">
-          <label for="author">내용</label>
+          <label for="author" class="mb-2">내용</label>
           <input
             type="text"
             class="form-control"
             id="author"
             placeholder=""
             name="author"
+            style="height: 300px"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-check"></i> 확인
+        </button>
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-rotate-left"></i> 취소
+        </button>
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-list"></i> 목록
+        </button>
       </form>
     </div>
   </body>
