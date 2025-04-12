@@ -3,16 +3,13 @@ export default {
   name: 'CheckboxItem2',
   props: ['idol'],
   created() {
-    this.idol.checked = true
+    this.idol.checked = false
   },
 }
 </script>
 
 <template>
-  <li><input type="checkbox" :checked="idol.checked" />{{ idol.name }}</li>
+  <div class="CheckboxItem2">
+    <li><input type="checkbox" :checked="idol.checked" /> {{ idol.name }}</li>
+  </div>
 </template>
-
-<style scoped>
-.CheckboxItem2 {
-}
-</style>

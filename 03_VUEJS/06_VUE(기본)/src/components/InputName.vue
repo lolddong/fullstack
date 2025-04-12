@@ -1,23 +1,25 @@
-<template>
-    <div style="border:solid 1px gray; padding:5px;">
-        이름 : <input type="text" v-model="name" />
-        <button @click="$emit('nameChanged', { name })">이벤트 발신</button>
-    </div>
-</template>
-
 <script>
 export default {
-    name: "InputName",
-    //emits : [ "nameChanged1"],
-    emits: {
-        nameChanged: (e) => {
-            return e.name && typeof(e.name) === "string" && e.name.trim().length >= 3 ?
-                true : false
-        }
+  name: 'InputName',
+  emits: {
+    nameChanged: (e) => {
+      return e.name && typeof e.name === 'string' && e.name.trim().length >= 3 ? true : false
     },
-    data() {
-        return {
-            name: ""
-        };
+  },
+  methods: {
+    nameChangeHandler() {
+      this.$emit('nameChanged', { name: this.name })
     },
+  },
+  data() {
+    return { name: '' }
+  },
 }
+</script>
+
+<template>
+  <div style="border: 1px solid lightcoral; padding: 5px">
+    이름: <input type="text" v-model="name" @keyup.enter="nameChangeHandler" />
+    <button @click="nameChangeHandler">이벤트 발신</button>
+  </div>
+</template>

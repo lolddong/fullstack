@@ -1,7 +1,7 @@
 export default class Idol {
-  contructor(id, name, ckeched) {
+  constructor(id, name, checked) {
     this.id = id
     this.name = name
-    this.checked = this.checked
+    this.checked = checked
   }
 }
