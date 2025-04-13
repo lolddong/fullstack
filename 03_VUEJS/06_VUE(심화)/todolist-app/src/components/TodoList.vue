@@ -1,3 +1,15 @@
+<script>
+import TodoListItem from './TodoListItem.vue'
+export default {
+  name: 'TodoList',
+  components: { TodoListItem },
+  props: {
+    todoList: { type: Array, required: true },
+  },
+  emits: ['delete-todo', 'toggle-completed'],
+}
+</script>
+
 <template>
   <div class="row">
     <div class="col">
@@ -7,16 +19,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import TodoListItem from './TodoListItem.vue'
-export default {
-  name: 'TodoList',
-  components: {
-    TodoListItem,
-  },
-  props: {
-    todoList: { type: Array, required: true },
-  },
-}
-</script>
