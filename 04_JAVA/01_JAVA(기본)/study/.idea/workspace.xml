@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97511ea-f130-411a-b97c-77089e5ff514" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../18회차_실습체크리스트_홍길동.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../18회차_실습체크리스트_홍길동.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../~$18회차_실습체크리스트_안다윤.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../~$18회차_실습체크리스트_홍길동.xlsx" beforeDir="false" />
-    </list>
+    <list default="true" id="f97511ea-f130-411a-b97c-77089e5ff514" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +167,7 @@
       <workItem from="1744712271877" duration="2675000" />
       <workItem from="1744761201740" duration="2693000" />
       <workItem from="1744764166256" duration="1216000" />
-      <workItem from="1744765542415" duration="2153000" />
+      <workItem from="1744765542415" duration="3526000" />
     </task>
     <servers />
   </component>
