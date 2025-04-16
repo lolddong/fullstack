@@ -2,6 +2,8 @@ package ch03.sec03;
 
 public class OverflowUnderflowExample {
     public static void main(String[] args) {
+
+        // Overflow
         byte var1 = 125;
         for (int i=0; i<5; i++) {
             var1++;
@@ -11,7 +13,8 @@ public class OverflowUnderflowExample {
 
         System.out.println("--------------");
 
-        byte var2 = 125;
+        // Underflow
+        byte var2 = -125;
         for (int i = 0; i < 5; i++) {
             var2--;
             System.out.println("var2: " + var2);

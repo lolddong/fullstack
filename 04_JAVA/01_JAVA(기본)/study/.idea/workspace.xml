@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f97511ea-f130-411a-b97c-77089e5ff514" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../01_JAVA(기본)/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch01/sec11/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch01/verify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch02/sec01/VariableExchangeExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch02/sec01/VariableInitializationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch02/sec01/VariableUseExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch02/sec06/StringExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch02/sec08/CastingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/sec01/IncreaseDecreaseOperatorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/sec03/OverflowUnderflowExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch03/sec09/StringConcatExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch01/sec09/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch01/sec09/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../18회차_실습체크리스트_홍길동.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../18회차_실습체크리스트_홍길동.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../~$18회차_실습체크리스트_안다윤.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../~$18회차_실습체크리스트_홍길동.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +22,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2vl0hKACHR8SOFRNhwMyNAZaM2r" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,34 +42,46 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/study/03-backend/study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
     "vue.rearranger.settings.migration": "true",
+    "애플리케이션.AccuracyExample1.executor": "Run",
+    "애플리케이션.AccuracyExample2.executor": "Run",
+    "애플리케이션.AssignmentOperatorExample.executor": "Run",
     "애플리케이션.Calculator.executor": "Run",
     "애플리케이션.CastingExample.executor": "Run",
+    "애플리케이션.CompareOperatorExample.executor": "Run",
+    "애플리케이션.ConditionalOperationExample.executor": "Run",
     "애플리케이션.Hello.executor": "Run",
     "애플리케이션.IncreaseDecreaseOperatorExample.executor": "Run",
+    "애플리케이션.LogicalOperatorExample.executor": "Run",
+    "애플리케이션.Operator.executor": "Run",
     "애플리케이션.OverflowUnderflowExample.executor": "Run",
+    "애플리케이션.PrimitiveAndStringConversionExample.executor": "Run",
+    "애플리케이션.PrintfExample.executor": "Run",
+    "애플리케이션.ScannerExample.executor": "Run",
     "애플리케이션.StringConcatExample.executor": "Run",
     "애플리케이션.StringExample.executor": "Run",
     "애플리케이션.VariableExchangeExample.executor": "Run",
     "애플리케이션.VariableInitializationExample.executor": "Run",
     "애플리케이션.VariableUseExample.executor": "Run",
     "애플리케이션.ch02.sec06.StringExample.executor": "Run",
+    "애플리케이션.trapezoid.executor": "Run",
     "애플리케이션.verify.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="애플리케이션.OverflowUnderflowExample">
-    <configuration name="CastingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch02.sec08.CastingExample" />
+  <component name="RunManager" selected="애플리케이션.ScannerExample">
+    <configuration name="Operator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch03.Operator" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch02.sec08.*" />
+          <option name="PATTERN" value="ch03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncreaseDecreaseOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch03.sec01.IncreaseDecreaseOperatorExample" />
+    <configuration name="PrimitiveAndStringConversionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch02.sec10.PrimitiveAndStringConversionExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch03.sec01.*" />
+          <option name="PATTERN" value="ch02.sec12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OverflowUnderflowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch03.sec03.OverflowUnderflowExample" />
+    <configuration name="PrintfExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch02.sec12.PrintfExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch03.sec03.*" />
+          <option name="PATTERN" value="ch02.sec12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringConcatExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch03.sec09.StringConcatExample" />
+    <configuration name="ScannerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch02.sec13.ScannerExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch03.sec09.*" />
+          <option name="PATTERN" value="ch02.sec13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch02.sec06.StringExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch02.sec06.StringExample" />
+    <configuration name="trapezoid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch03.trapezoid" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch02.sec06.*" />
+          <option name="PATTERN" value="ch03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.OverflowUnderflowExample" />
-        <item itemvalue="애플리케이션.IncreaseDecreaseOperatorExample" />
-        <item itemvalue="애플리케이션.StringConcatExample" />
-        <item itemvalue="애플리케이션.CastingExample" />
-        <item itemvalue="애플리케이션.ch02.sec06.StringExample" />
+        <item itemvalue="애플리케이션.ScannerExample" />
+        <item itemvalue="애플리케이션.Operator" />
+        <item itemvalue="애플리케이션.trapezoid" />
+        <item itemvalue="애플리케이션.PrintfExample" />
+        <item itemvalue="애플리케이션.PrimitiveAndStringConversionExample" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +167,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743639189904</updated>
-      <workItem from="1744704474141" duration="4400000" />
+      <workItem from="1744704474141" duration="5034000" />
+      <workItem from="1744712271877" duration="2675000" />
+      <workItem from="1744761201740" duration="2693000" />
+      <workItem from="1744764166256" duration="1216000" />
+      <workItem from="1744765542415" duration="2153000" />
     </task>
     <servers />
   </component>
