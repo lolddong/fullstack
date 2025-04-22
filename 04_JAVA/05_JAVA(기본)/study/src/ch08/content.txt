@@ -22,3 +22,6 @@ ch08: Interface 인터페이스
     - public clas 구현클래스명 implements 인터페이스A, 인터페이스B { 추상 메소드 정의 }
 - sec09: 인터페이스 상속
     - public interface 자식인터페이스 extends 부모인터페이스1, 부모인터페이스2, ... {...}
+- sec10: 타입 변환
+    - 자동 타입 변환 (promotion, upcasting)
+    - 강제 타입 변환 (casting, downcasting)
