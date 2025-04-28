@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="01_NODE_기초(기본)_실습풀이(소스)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/04_JAVA/07_JAVA(기본)/study/lib/lombok.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
