@@ -1,9 +1,10 @@
-import { fileURLToPath, URL } from 'node:url';
+// vite.config.js
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
   resolve: {
@@ -20,4 +21,4 @@ export default defineConfig({
       },
     },
   },
-});
+})
