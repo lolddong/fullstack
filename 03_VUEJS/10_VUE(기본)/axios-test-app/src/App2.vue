@@ -14,21 +14,31 @@ const todoUrlPrefix = '/api/todolist_long/gdhong/'
 const requestAPI = async () => {
   let todoList
 
-  let response = await axios.get(listUrl)
-  todoList = response.data
-  console.log('# TodoList (App2): ', todoList)
+  // 예외 처리
+  try {
+    let response = await axios.get(listUrl)
+    todoList = response.data
+    console.log('# TodoList (App2): ', todoList)
 
-  // 첫 번째, 두 번째 할 일을 순차적으로 조회
-  response = await axios.get(todoUrlPrefix + todoList[0].id)
-  console.log('## 첫 번째 Todo: ', response.data)
+    // 첫 번째, 두 번째 할 일을 순차적으로 조회
+    response = await axios.get(todoUrlPrefix + todoList[0].id)
+    console.log('## 첫 번째 Todo: ', response.data)
 
-  response = await axios.get(todoUrlPrefix + todoList[1].id)
-  console.log('## 두 번쩨 Todo: ', response.data)
+    response = await axios.get(todoUrlPrefix + todoList[1].id)
+    console.log('## 두 번쩨 Todo: ', response.data)
 
-  // 한 건씩 순차적으로 조회
-  for (let i = 0; i < todoList.length; i++) {
-    response = await axios.get(todoUrlPrefix + todoList[i].id)
-    console.log(`# ${i + 1}번째 Todo: `, response.data)
+    // 한 건씩 순차적으로 조회
+    for (let i = 0; i < todoList.length; i++) {
+      response = await axios.get(todoUrlPrefix + todoList[i].id)
+      console.log(`# ${i + 1}번째 Todo: `, response.data)
+    }
+  }
+  catch (e) {
+    if (e instanceof Error) {
+      console.log(e.message)
+    } else {
+      console.log(e);
+    }
   }
 }
 requestAPI()

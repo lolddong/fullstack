@@ -30,6 +30,13 @@ const requestAPI = () => {
       axios.get(todoUrlPrefix + id).then((response) => {
         console.log('## 두 번째 Todo: ', response.data)
       })
+    }).catch((e) => {
+      // 예외 처리
+      if (e instanceof Error) {
+        console.log(e.message)
+      } else {
+        console.log(e);
+      }
     })
 }
 requestAPI()
