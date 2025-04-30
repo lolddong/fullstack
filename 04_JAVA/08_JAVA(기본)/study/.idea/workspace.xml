@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b60e9b-9e84-47b5-a41a-604e64fff6ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec04/ThreadNameExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec05/exam01/SleepExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec05/exam02/JoinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec05/exam02/SumThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec05/exam03/WorkThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec05/exam03/YieldExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec08/AutoSaveThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec08/DaemonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec09/exam01/ExecutorServiceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch14/sec09/exam02/RunnableExecuteExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam01/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam01/SynchronizedExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam01/User1Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam01/User2Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam02/ThreadA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam02/ThreadB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam02/WaitNotifyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec06/exam02/WorkObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch14/sec09/exam03/CallableSubmitExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +45,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BeepPrintExample.executor": "Run",
+    "Application.CallableSubmitExample (1).executor": "Run",
+    "Application.CallableSubmitExample.executor": "Run",
     "Application.DaemonExample.executor": "Run",
     "Application.JoinExample.executor": "Run",
     "Application.RunnableExecuteExample (1).executor": "Run",
     "Application.RunnableExecuteExample.executor": "Run",
     "Application.SleepExample.executor": "Run",
+    "Application.SynchronizedExample.executor": "Run",
     "Application.ThreadNameExample.executor": "Run",
+    "Application.WaitNotifyExample.executor": "Run",
     "Application.YieldExample.executor": "Run",
     "Application.ch14.sec03.exam02.BeepPrintExample.executor": "Run",
     "Application.ch14.sec03.exam03.BeepPrintExample.executor": "Run",
@@ -59,6 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/study/03-backend/study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,13 +72,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RunnableExecuteExample (1)">
-    <configuration name="DaemonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch14.sec08.DaemonExample" />
+  <component name="RunManager" selected="Application.CallableSubmitExample (1)">
+    <configuration name="CallableSubmitExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec09.exam03.CallableSubmitExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch14.sec08.*" />
+          <option name="PATTERN" value="ch14.sec09.exam03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallableSubmitExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec09.exam03.CallableSubmitExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch14.sec09.exam03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnableExecuteExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch14.sec09.exam02.RunnableExecuteExample" />
+    <configuration name="SynchronizedExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec06.exam01.SynchronizedExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch14.sec09.exam02.*" />
+          <option name="PATTERN" value="ch14.sec06.exam01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,25 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SleepExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch14.sec05.exam01.SleepExample" />
+    <configuration name="WaitNotifyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec06.exam02.WaitNotifyExample" />
       <module name="study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch14.sec05.exam01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YieldExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch14.sec05.exam03.YieldExample" />
-      <module name="study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch14.sec05.exam03.*" />
+          <option name="PATTERN" value="ch14.sec06.exam02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallableSubmitExample (1)" />
+        <item itemvalue="Application.CallableSubmitExample" />
+        <item itemvalue="Application.WaitNotifyExample" />
+        <item itemvalue="Application.SynchronizedExample" />
         <item itemvalue="Application.RunnableExecuteExample (1)" />
-        <item itemvalue="Application.RunnableExecuteExample" />
-        <item itemvalue="Application.DaemonExample" />
-        <item itemvalue="Application.YieldExample" />
-        <item itemvalue="Application.SleepExample" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +166,9 @@
       <updated>1743639189904</updated>
       <workItem from="1745459590261" duration="2217000" />
       <workItem from="1745463283659" duration="12227000" />
+      <workItem from="1745904687345" duration="1493000" />
+      <workItem from="1745970398266" duration="997000" />
+      <workItem from="1745980552396" duration="7291000" />
     </task>
     <servers />
   </component>
