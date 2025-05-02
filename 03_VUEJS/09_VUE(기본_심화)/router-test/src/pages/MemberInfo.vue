@@ -19,20 +19,22 @@
       class="fa fa-youtube m-1"
     ></a>
     <br /><br />
-    <router-link to="/members">멤버 목록으로</router-link>
+    <router-link :to="{ name: 'members' }">멤버 목록으로</router-link>
   </div>
 </template>
 
 <script>
-import { useRoute } from 'vue-router'
+// import { useRoute } from 'vue-router'
 import members from '@/members.json'
 
 export default {
   name: 'MemberInfo',
-  setup() {
-    const currentRoute = useRoute()
-    const id = parseInt(currentRoute.params.id, 10)
-    const member = members.find((m) => m.id === id)
+  props: ['id'],
+  setup(props) {
+    // const currentRoute = useRoute()
+    // const id = parseInt(currentRoute.params.id, 10)
+    // const member = members.find((m) => m.id === id)
+    const member = members.find((m) => m.id === parseInt(props.id, 10))
     return { member }
   },
 }

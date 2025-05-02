@@ -10,7 +10,7 @@
         :class="playingVideo(v.id)"
       >
         {{ v.title }} ({{ v.category }})
-        <router-link :to="'/videos/' + v.id">
+        <router-link :to="{ name: 'videos/id', params: { id: v.id } }">
           <span class="float-end badge bg-secondary">듣기</span>
         </router-link>
       </li>

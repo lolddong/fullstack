@@ -56,7 +56,6 @@ export default {
     }
     const playNext = () => {
       if (nextVideoId) {
-        videoInfo.video = nextVideoId
         router.push({ name: 'videos/id', params: { id: nextVideoId } })
       } else {
         router.push({ name: 'videos/id', params: { id: videos[0].id } })

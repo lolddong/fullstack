@@ -25,9 +25,10 @@ const router = createRouter({
     { path: '/members', name: 'members', component: Members },
     {
       path: '/members/:id',
-      name: 'memberInfo',
+      name: 'members/id',
       component: MemberInfo,
       beforeEnter: membersIdGuard,
+      props: true,
     },
     {
       path: '/videos',
