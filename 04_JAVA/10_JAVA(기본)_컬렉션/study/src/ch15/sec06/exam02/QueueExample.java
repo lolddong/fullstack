@@ -8,15 +8,12 @@ public class QueueExample {
         // Queue 컬렉션 생성: LinkedList를 큐로 이용
         Queue<Message> queue = new LinkedList<Message>();
 
-        // Message 인스턴스를 다음 순(command, to)로 추가
-        // - sendMail, 홍길동
-        // - sendSMS, 신용권
-        // - sendKakaotalk, 김자바
+        // 메시지 추가
         queue.offer(new Message ("sendMail", "홍길동"));
         queue.offer(new Message("sendSMS", "신용권"));
         queue.offer(new Message("sendKakaotalk", "김자바"));
 
-        // 큐가 빌 때까지 큐에서 Message를 추출하며 command에 따라 내용 출력
+        // 메시지 하나씩 출력
         while (!queue.isEmpty()) {
             Message msg = queue.poll();
             String command = msg.command;
