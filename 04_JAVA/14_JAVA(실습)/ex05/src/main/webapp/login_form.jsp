@@ -4,9 +4,9 @@
 </head>
 <body>
 <form action="/login" method="post">
-    <fieldset>
+    <fieldset style="border: solid 3px black;">
         <legend>로그인 폼</legend>
-        <ul style="list-style: none;">
+        <ul>
             <li>
                 <label for="userid">아이디 </label>
                 <input type="text" id="userid" name="userid">
