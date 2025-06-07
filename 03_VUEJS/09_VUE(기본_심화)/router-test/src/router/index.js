@@ -1,12 +1,21 @@
 import { createRouter, createWebHistory, isNavigationFailure } from 'vue-router'
 
-import Home from '@/pages/Home.vue'
-import About from '@/pages/About.vue'
-import Members from '@/pages/Members.vue'
-import MemberInfo from '@/pages/MemberInfo.vue'
-import Videos from '@/pages/Videos.vue'
-import VideoPlayer from '@/pages/VideoPlayer.vue'
-import NotFound from '@/pages/NotFound.vue'
+// import Home from '@/pages/Home.vue'
+// import About from '@/pages/About.vue'
+// import Members from '@/pages/Members.vue'
+// import MemberInfo from '@/pages/MemberInfo.vue'
+// import Videos from '@/pages/Videos.vue'
+// import VideoPlayer from '@/pages/VideoPlayer.vue'
+// import NotFound from '@/pages/NotFound.vue'
+
+// 지연 로딩 적용, webpackChunkName 기능 적용
+const Home = () => import(/* webpackChunkName: "home" */ '@/pages/Home.vue')
+const About = () => import(/* webpackChunkName: "home" */ '@/pages/About.vue')
+const Members = () => import(/* webpackChunkName: "members" */ '@/pages/Members.vue')
+const MemberInfo = () => import(/* webpackChunkName: "members" */ '@/pages/MemberInfo.vue')
+const Videos = () => import(/* webpackChunkName: "videos" */ '@/pages/Videos.vue')
+const VideoPlayer = () => import(/* webpackChunkName: "videos" */ '@/pages/VideoPlayer.vue')
+const NotFound = () => import(/* webpackChunkName: "home" */ '@/pages/NotFound.vue')
 
 // 내비게이션 가드
 const membersIdGuard = (to, from) => {
